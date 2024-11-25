@@ -15,7 +15,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--PD-Color);
     overflow-x: hidden;
     background-color: var(--BG-COLOR);
     
@@ -31,6 +31,7 @@ body {
     --MAIN-COLOR:#fff;
     --BG-COLOR:#f9f9f9;
     --P-COLOR:#555;
+    --PD-Color: #333;
 
     --COMMON-WIDTH: calc(90%-30px);
 
@@ -41,6 +42,9 @@ body {
     --FS-S: clamp(0.4rem,3vw,1rem);
     --FS-M:clamp(0.5rem,3vw,1.5rem);
     --FS-XS:clamp(0.4rem,3vw,0.7rem);
+
+
+    --BS:box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 
 
@@ -118,7 +122,7 @@ header {
 .nav-toggle .hamburger {
     width: 25px;
     height: 2px;
-    background-color: #333;
+    background-color: var(--PD-Color);
     position: relative;
     display: inline-block;
     margin-right: 1rem;
@@ -130,7 +134,7 @@ header {
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: #333;
+    background-color: var(--PD-Color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -154,7 +158,7 @@ header {
         right: 5%;
         width: 90%;
         border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: var(--BS  );
     }
 
     .nav-links.show {
@@ -186,7 +190,7 @@ header {
 .hero-content h1 {
     font-size: var(--FS-XL);
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--PD-Color);
 }
 
 .hero-content h1 span {
@@ -257,7 +261,7 @@ header {
 .about h2 {
     font-size: var(--FS-XL);
     margin-bottom: 2rem;
-    color: #333;
+    color: var(--PD-Color);
 }
 
 .about p {
@@ -298,7 +302,7 @@ header {
 .services h2 {
     font-size: var(--FS-XL);
     margin-bottom: 3rem;
-    color: #333;
+    color: var(--PD-Color);
 }
 
 .services-container {
@@ -313,9 +317,9 @@ header {
     width: 30%;
     padding: 2rem;
     background-color: var(--MAIN-COLOR);
-    color: #333;
+    color: var(--PD-Color);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--BS);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -348,7 +352,7 @@ header {
 .clients-say h2 {
     font-size: var(--FS-XL);
     margin-bottom: 2rem;
-    color: #333;
+    color: var(--PD-Color);
 }
 
 .client-cards {
@@ -362,7 +366,7 @@ header {
     background-color: var(--BG-COLOR);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--BS);
     width: 45%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -374,7 +378,7 @@ header {
 
 .client-card p {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--PD-Color);
     margin-bottom: 1rem;
 }
 
@@ -398,7 +402,7 @@ header {
 .projects h2 {
     font-size: var(--FS-XL);
     margin-bottom: 3rem;
-    color: #333;
+    color: var(--PD-Color);
 }
 
 .projects-gallery {
@@ -413,7 +417,7 @@ header {
     background-color: var(--MAIN-COLOR);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--BS);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -444,7 +448,7 @@ header {
 
 /* Footer Section */
 .footer {
-    background-color: #333;
+    background-color: var(--PD-Color);
     color: white;
     padding: 3rem 5%;
     text-align: center;
@@ -493,7 +497,7 @@ header {
 }
 
 .social-icon.github:hover {
-    color: #333;
+    color: var(--PD-Color);
 }
 
 .social-icon.twitter:hover {
@@ -580,7 +584,7 @@ header {
 }
 
 .scroll:hover {
-background-color: #555;
+background-color: var(--P-COLOR);
 transform: translateY(-5px);
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+box-shadow:var(--BS);  
 }
